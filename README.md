@@ -1,16 +1,105 @@
-# React + Vite
+## Currency Converter — ALX FE Capstone Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and functional currency converter built with React, Vite, and Tailwind CSS. It fetches live exchange rates from a public API and lets users convert any amount between two currencies. The goal of this project is to demonstrate core frontend development skills: API integration, state management, UI design, and deployment.
 
-Currently, two official plugins are available:
+# Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Fetches real-time exchange rates
 
-## React Compiler
+Convert an amount from one currency to another
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Clean UI for selecting currencies
 
-## Expanding the ESLint configuration
+Swap button for quick switching
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Responsive layout built with Tailwind CSS
+
+Error handling for failed network requests
+
+Mobile-friendly interface
+
+
+# Tech Stack
+
+React (Vite)
+
+Tailwind CSS
+
+Fetch/Axios
+
+ExchangeRate API (or any reliable currency API)
+
+Netlify / Vercel (for deployment)
+
+
+# Getting Started
+1. Clone the Repository
+git clone https://github.com/Kamisky1-Design/currency-converter.git
+
+cd currency-converter
+
+2. Install Dependencies
+npm install
+
+3. Add Your API Key
+
+Create a .env file:
+VITE_EXCHANGE_API_KEY=your_api_key_here
+
+4. Run the App
+npm run dev
+
+# Project Structure
+src/
+ ├── components/
+ ├── pages/
+ ├── hooks/
+ ├── utils/
+ ├── App.jsx
+ └── main.jsx
+
+# How It Works
+
+The app loads available currencies from the API
+
+User selects the “from” and “to” currencies
+
+User enters the amount
+
+The app calculates the converted value using stored rates
+
+UI updates instantly
+
+Everything runs on client-side logic. No backend needed.
+
+
+# Future Improvements
+
+Show historical trends
+
+Save favorite currency pairs
+
+Convert a single amount into multiple currencies
+
+Dark mode
+
+Rate alerts
+
+
+# Deployment
+
+You can deploy this app easily on:
+
+Netlify
+
+Vercel
+
+GitHub Pages
+
+Each platform works smoothly with Vite.
+
+
+# Author
+
+Komla Sanussi (Kamisky)
+ALX Front-End Development Student
